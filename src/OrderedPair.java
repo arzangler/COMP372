@@ -15,4 +15,12 @@ public class OrderedPair {
     public int getSecond() {
         return second;
     }
+
+    public String toString() {
+        return "(" + first + ", " + second + ")";
+    }
+
+    public boolean equals(OrderedPair other){
+        return (first == other.getFirst()) && (second == other.getSecond());
+    }
 }
