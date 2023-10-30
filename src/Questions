@@ -1,0 +1,23 @@
+1. What bugs and conceptual difficulties did you encounter? How did you overcome them? What did you learn?
+    The biggest conceptual difficulty I encountered was with how to store the ordered pairs and then how to access them
+    later. This was an issue because I made the ordered pairs their own class but then struggled to compare them because
+    at the beginning even if the ordered pairs were the same they were different instances of the class. So I had to
+    change the equals code and the hashing for the class in order to compare them in an easier manner.
+
+
+2.   Describe whatever help (if any) that you received. Don’t include readings, lectures, and exercises, but do include any help from other sources, such as websites or people (including classmates and friends) and attribute them by name.
+    I used stackoverflow to remember some basic things about formating and then stack overflow again with GeeksforGeeks
+    to help me figure out how to compare different OrderedPairs while maintaining the class and structures that I had
+    already built.
+
+3.   Describe any serious problems you encountered while writing the program.
+    Accessing specific values depending on the parent values took a while to figure out. After struggling to loop
+    through some of the maps that were created in my classes making sure I was getting the correct value to add to my
+    summation took a bit of time.
+
+4.   Mention any challenges that you did.
+    N/A
+
+5.   List any other feedback you have. Feel free to provide any feedback on how much you learned from doing the assignment, and whether you enjoyed doing it.
+    I enjoyed this assignment it was nice using more math in a coding project. Ended up using a lot of scratch paper
+    figuring out how everything connected together, but I enjoyed the process of doing it.

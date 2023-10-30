@@ -4,7 +4,6 @@ import java.util.Map;
 
 public class LastLocation {
     private Map<OrderedPair, Double> lastLocation = new HashMap<>();
-    private int gridSize;
 
     public LastLocation (int gridSize, ArrayList<OrderedPair> allPosLocations){
         double initialProb = (double) 1 / (gridSize * gridSize);
@@ -21,16 +20,12 @@ public class LastLocation {
         return lastLocation;
     }
 
-    public int getGridSize() {
-        return gridSize;
-    }
 
-    public Map<OrderedPair, Double> setLastLocation(LastLocation newDistribution) {
-        lastLocation = newDistribution.getDistribution();
+    public Map<OrderedPair, Double> setLastLocation(Map<OrderedPair, Double> newDistribution) {
+        lastLocation = newDistribution;
         return lastLocation;
     }
 
-    // have to calculate which part of the allPosLocations array this is a part of
     public Double getProbability(OrderedPair key) {
         return lastLocation.get(key);
     }
