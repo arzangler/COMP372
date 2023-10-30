@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class OrderedPair {
     private final int first;
@@ -20,7 +21,22 @@ public class OrderedPair {
         return "(" + first + ", " + second + ")";
     }
 
-    public boolean equals(OrderedPair other){
-        return (first == other.getFirst()) && (second == other.getSecond());
+    @Override
+    public boolean equals(Object other){
+        if (this == other) {
+            return true;
+        }
+        if (other == null || getClass() != other.getClass()){
+            return false;
+        }
+        OrderedPair test = (OrderedPair) other;
+        return first == test.first && second == test.second;
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(first, second);
+    }
+
+
 }

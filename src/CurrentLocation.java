@@ -21,4 +21,9 @@ public class CurrentLocation {
     public int length() {
         return currentLocation.size();
     }
+    public void setCurrentLocation(OrderedPair key, Double value){
+        currentLocation.put(key, value);
+    }
+
+    // given a location return prob of curr location
 }

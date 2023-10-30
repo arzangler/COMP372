@@ -3,13 +3,13 @@ public class MotionSensor {
 
     public MotionSensor(boolean M1, OrderedPair currLoc, int gridSize){
         if (M1){
-            motionSensorM1(currLoc, gridSize);
+            motionSensorM1(currLoc);
         }
         else {
             motionSensorM2(currLoc, gridSize);
         }
     }
-    private void motionSensorM1(OrderedPair currLoc, int gridSize){
+    private void motionSensorM1(OrderedPair currLoc){
         // M1 is located top left (0,0)
         // Get distance from sensor
         if (currLoc.getFirst() == 0){
